@@ -1,9 +1,9 @@
-#CC=mpigcc
-#CCXX=mpigxx
-#CF=mpif90
-CC=mpiicc
-CCXX=mpiicpc
-CF=mpiifort
+CC=mpigcc
+CXX=mpigxx
+CF=mpif90
+#CC=mpiicc
+#CXX=mpiicpc
+#CF=mpiifort
 
 COMPILEROPT=
 
