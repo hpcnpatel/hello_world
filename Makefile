@@ -1,9 +1,6 @@
-CC=mpigcc
-CXX=mpigxx
-CF=mpif90
-#CC=mpiicc
-#CXX=mpiicpc
-#CF=mpiifort
+CC=$CC
+CXX=$CXX
+CF=$:wFC
 
 COMPILEROPT=
 
@@ -29,10 +26,10 @@ cppfiles: $(CXXEXEC)
 	$(CC) $(COMPILEROPT) $(INC) -o $@ $^ $(SHLIB)
 
 % : %.cpp
-	$(CCXX) $(COMPILEROPT) $(INC) -o $@ $^ $(SHLIB)
+	$(CXX) $(COMPILEROPT) $(INC) -o $@ $^ $(SHLIB)
 
 % : %.f90
-	$(CF) $(COMPILEROPT) $(INC) -o $@ $^ $(SHLIB)
+	$(FC) $(COMPILEROPT) $(INC) -o $@ $^ $(SHLIB)
 
 .PHONY: clean
 clean :
