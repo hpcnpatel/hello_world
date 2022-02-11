@@ -1,6 +1,6 @@
 CC=$CC
 CXX=$CXX
-CF=$:wFC
+CF=$FC
 
 COMPILEROPT=
 
