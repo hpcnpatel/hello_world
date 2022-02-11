@@ -1,12 +1,3 @@
-CC=$CC
-CXX=$CXX
-CF=$FC
-
-COMPILEROPT=
-
-INC=
-SHLIB=
-LIB=
 
 FSRC = $(wildcard *.f90)
 FEXEC = $(patsubst %.f90, %, $(FSRC))
